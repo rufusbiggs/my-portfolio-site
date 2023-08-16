@@ -10,10 +10,10 @@
         <!-- Header section on RHS of screen -->
         <nav>
             <ul class="navigation-items">
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li><a href="#logo">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/rufus-biggs-519001151/" target="_blank"><img src="images/linkedin-3-32.png" width="32" height="32"></a>
@@ -27,11 +27,11 @@
             <!-- Logo and Image-->
             <section id="logo">
                 <div class="logo-container">
-                    <div class="logo-black"></div>
-                    <div class="logo-red"></div>
-                    <div class="logo-blue"></div>
-                    <div class="logo-green"></div>
-                    <div class="logo-image"><img src="images/ME.jpeg"></div>
+                    <div id="logo-black"></div>
+                    <div id="logo-red"></div>
+                    <div id="logo-blue"></div>
+                    <div id="logo-green"></div>
+                    <div id="logo-image"><img src="images/ME.jpeg"></div>
                 </div>
             </section>
 
@@ -39,10 +39,12 @@
             <section id="about-me">
                 <div class="about-me-container">
                     <div class="about-me-text-container">
-                        <h2>Rufus Biggs</h2>
+                        <h1>Rufus Biggs</h1>
                         <p>Hi, I&#39m Rufus! I have a strong passion for problem-solving, which began during my university years when I developed complex real-world engineering solutions. This passion evolved into my first job as a business analyst and product manager. I have successfully contributed to the entire lifecycle of software products, from ideation to completion and want to continue this trend!</p>
                         <p>My passion for problem solving and software development led me to learn to code. The creative side of me wanted to start with front-end engineering but once I started learning I couldn&#39t stop adding skills to my repertoir!</p>
-                        <p>I&#39ve now been coding for XXXXX seconds! In that time we&#39ve seen XXXX full moons and XXXX spent XXXX on ice cream</p>
+                        
+                        <h5 id="countdown">You've got 60 seconds to view this page before it self destructs!</h5>
+                        <button id="cancel">Cancel...</button>
                     </div>
                 </div>
             </section>
@@ -51,10 +53,14 @@
             <section id="projects">
                 <div class="projects-container">
                     <h2>Projects</h2>
-                    <ol class="project-list">
-                        <li>Eating Baked Beans</li>
-                        <li>Hello World!</li>
-                    </ol>
+                    <div class="bean-project">
+                        <h5>Eating Baked Beans</h5>
+                        <a><img src="images/beans.jpeg" alt="Image of baked beans"></a>
+                    </div>
+                    <div class="hello-world-project">
+                        <h5>Hello World!</h5>
+                        <a><img src="images/hello.png" alt="HELLO!"></a>
+                    </div>
                 </div>
             </section>
 
@@ -90,5 +96,9 @@
             </section>
 
         </main>
+
+        <!-- Runs the countdown -->
+        <script src="script.js"></script>
+
     </body>
 </html>
