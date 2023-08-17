@@ -4,6 +4,10 @@
     font-family: Righteous, Monospace;
 }
 
+html {
+    font-size: 18px;
+  }
+
 /* navigation section */
 
 nav {
@@ -17,7 +21,7 @@ nav {
 
 .navigation-items {
     list-style-type: none;
-    font-size: 80px;
+    font-size: 4.5rem;
     color: white;
 }
 
@@ -32,11 +36,11 @@ nav {
 
 .social-links {
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 2.8rem;
 }
 
 .social-links a {
-    margin-right: 20px;
+    margin-right: 1.1rem;
 }
 
 
@@ -53,13 +57,13 @@ main {
 /* Logo styling */
 
 .logo-container {
-    height: 200px;
-    margin: 30px 40px;
+    height: 11rem;
+    margin: 1.7rem 2.2rem;
 }
 
 #logo-black {
-    height: 50px;
-    width: 50px;
+    height: 2.8rem;
+    width: 2.8rem;
     border-radius: 50%;
     position: relative;
     display: inline-block;
@@ -70,70 +74,70 @@ main {
 }
 
 #logo-black:hover {
-    margin-left: -20px;
+    margin-left: -1.1rem;
 }
 
 #logo-red {
-    height: 75px;
-    width: 75px;
+    height: 4.2rem;
+    width: 4.2rem;
     border-radius: 50%;
     position: relative;
     display: inline-block;
     background-color: #F04F2A;
     vertical-align: middle;
-    margin-left: -25px;
+    margin-left: -1.4rem;
     transition: 
         margin-left 1s;
 }
 
 #logo-red:hover {
-    margin-left: -5px;
+    margin-left: -0.3px;
 }
 
 #logo-blue {
-    height: 100px;
-    width: 100px;
+    height: 5.6rem;
+    width: 5.6rem;
     border-radius: 50%;
     position: relative;
     display: inline-block;
     background-color: #2ABDFB;
     vertical-align: middle;
-    margin-left: -50px;
+    margin-left: -2.8rem;
     transition: 
         margin-left 1s;
 }
 
 #logo-blue:hover {
-    margin-left: -75px;
+    margin-left: -4.2rem;
 }
 
 #logo-green {
-    height: 125px;
-    width: 125px;
+    height: 6.9rem;
+    width: 6.9rem;
     border-radius: 50%;
     position: relative;
     display: inline-block;
     background-color: #29CE85;
     vertical-align: middle;
-    margin-left: -75px;
+    margin-left: -4.2rem;
     transition: 
         margin-left 1s;
 }
 
 #logo-green:hover {
-    margin-left: -55px;
+    margin-left: -3.1rem;
 }
 
 #logo-image {
     display: inline-block;
     vertical-align: middle;
-    margin-left: -100px;
+    margin-left: -5.6rem;
     position: relative;
 }
 
 #logo-image img {
-    height: 150px;
-    width: 150px;
+    height: 8.3rem;
+    width: 8.3rem;
     border-radius: 50%;
     transition:
         rotate 1s;
@@ -145,7 +149,7 @@ main {
 
 /* About me section */
 .about-me-container {
-    margin: 30px 40px;
+    margin: 1.7rem 2.2rem;
     color: white;
 }
 
@@ -163,33 +167,36 @@ main {
 
 /* Projects section */
 .projects-container {
-    margin: 150px 40px;
+    margin: 8.3rem 2.2rem;
     color: white;
 }
 
 .projects-container div {
     display: inline-block;
     border: solid 1px black;
-    margin-right: 40px; 
+    margin-right: 2.2rem; 
     background-color: white;
     color: black;
-    padding: 5px 20px 5px 20px;
+    padding: 0.3rem 1.7rem;
 }
 
 .projects-container img {
-    height: 150px;
-    width: 150px;
+    height: 8.3rem;
+    width: 8.3rem;
     margin: 0 auto;
 }
 
 /* Skills section */
 .skills-container {
-    margin: 150px 40px;
+    margin: 8.3rem 2.2rem;
     color: white;
 }
 
 /* Contact section */
 .contact-container {
-    margin: 150px 40px;
+    margin: 8.3rem 2.2rem;
     color: white;
 }
+
+/* Screen sizes 414px - 768px (tablets) */
+
