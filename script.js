@@ -48,6 +48,32 @@ function startCountdown() {
 window.addEventListener('load', startCountdown);
 
 
+// Toggle nav menu using hamburger icon on smaller screens //
+
+function toggleNavMenu() {
+  const navMenu = document.querySelector('nav');
+  if (navMenu.style.display === "none") {
+    navMenu.style.display = "block";
+  } else {
+    navMenu.style.display = "none";
+  }
+}
+
+function screenSizeChecker(){
+  if (screen.width < 500){
+    document.querySelector('nav').style.display = "none";
+    document.getElementById('hamburger-menu-button').addEventListener('click', toggleNavMenu);
+    document.querySelectorAll('.navigation-items').forEach(item => {item.addEventListener('click', toggleNavMenu)});
+  }
+}
+
+screenSizeChecker();
+
+window.onresize = screenSizeChecker;
+
+
+
+
 
 
   
