@@ -154,8 +154,7 @@ main {
 /* About me section */
 
 .about-me-text-container h1 {
-    /* font-size: 32px;
-    color: green; */
+    font-size: 32px;
   }
   
   .about-me-text-container h1:nth-child(2) {
@@ -291,7 +290,6 @@ main {
     }
 
     nav {
-        /* display: none; */
         height: 100%;
         width: 100%;
         z-index: 1;
@@ -333,7 +331,6 @@ main {
     }
 
     .hamburger-menu {
-        /* width: 15%; */
         height: 3.2rem;
         padding: 0;
         display: flex;
@@ -365,6 +362,4 @@ main {
       .about-me-text-container h1:nth-child(2) {
         display: block;
     }
-
-    
 }

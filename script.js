@@ -59,20 +59,27 @@ function toggleNavMenu() {
   }
 }
 
-function screenSizeChecker(){
-  if (screen.width < 500){
+function screenSizeSmaller(mediaQuery) {
+  if (mediaQuery.matches) { // If media query matches
     document.querySelector('nav').style.display = "none";
     document.getElementById('hamburger-menu-button').addEventListener('click', toggleNavMenu);
     document.querySelectorAll('.navigation-items').forEach(item => {item.addEventListener('click', toggleNavMenu)});
+  } 
+}
+
+const phoneScreenCheck = window.matchMedia("(max-width: 500px)");
+screenSizeSmaller(phoneScreenCheck); // Call listener function at run time
+mediaQuery.addListener(screenSizeSmaller); // Attach listener function on state changes
+
+function screenSizeBigger(mediaQuery) {
+  if (mediaQuery.matches) {
+    document.querySelector('nav').style.display = "block";
   }
 }
 
-screenSizeChecker();
-
-window.onresize = screenSizeChecker;
-
-
-
+const nonPhoneScreenCheck = window.matchMedia("(min-width: 501px)");
+// screenSizeBigger(nonPhoneScreenCheck); // Call listener function at run time
+mediaQuery.addListener(screenSizeBigger); // Attach listener function on state changes
 
 
 
