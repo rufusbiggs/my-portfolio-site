@@ -4,20 +4,10 @@ function selfDestruct() {
     document.body.innerHTML = '<h1>BOOM</h1><p>Refresh to rebuild</p>'
 }
 
-
-// // Cancel self destruct
-// function cancelDestruct() {
-//     // let clicked = true;
-//     document.getElementById('cancel').innerHTML = '';
-// }
-
-// document.getElementById('cancel').addEventListener('onclick', cancelDestruct);
+// cancel self destruct if user clicks 'cancel' button
 
 var button = document.getElementById("cancel");
 button.addEventListener("click", function(e) {
-    // e is the event object
-    // e.target is the button element
-    // do stuff with them
     let clicked = true;
 });
 
@@ -47,6 +37,9 @@ function startCountdown() {
 
 window.addEventListener('load', startCountdown);
 
+
+
+// ---------- HERE DOWN NEEDS SOME LOOKING AT ------------ //
 
 // Toggle nav menu using hamburger icon on smaller screens //
 
